@@ -74,3 +74,13 @@ zcard key :返回元素个数
 scount key min max :返回有序集key中，score在min,max之间的元素
 zscore key member :返回集合中成员member的score值
 
+发布订阅
+subscribe 频道名称 [频道名称...]:订阅
+unsubscribe 频道名称 【频道名称...】:取消订阅
+publish 频道 消息：发布
+
+主从模式
+主：bind xxxx
+从：
+bind xxxx
+slaveof 主机
